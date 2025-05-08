@@ -12,3 +12,5 @@
 // 1- npm install tailwindcss @tailwindcss/cli
 // 2- importar o tailwind no arquivo css - @import "tailwindcss";
 // 3- para buildar o tailwind cria uma pasta de output para salvar suas preferencias, então para isso tem que usar um compando cli: npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch; e no index linkar o css do output gerado por ele.
+
+//obs: caso vc passe um estilo e não funcione pode ser porque esqueceu de usar o watc, funciona como um npm run dev
