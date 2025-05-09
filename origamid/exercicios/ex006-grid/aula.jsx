@@ -53,3 +53,13 @@
     <div>Item 4</div>
     </div> */
 }
+
+//aprendizados rápidos:
+
+// span = expandir, logo se temos grid grid-col-3 e o item tem col-span-3, ele vai se expandir pelas 3 colunas. é como se disses ao item col-start-1 col-end-4 (para ocupar tudo até antes da quarta coluna)
+
+//auto = definição em automatico, faz com que os itens tenham seu tamanho normal, olhar no nav do html. basicamente, grid-col-[1fr_auto] faz com que o priemiro item tenha 1fr e o segundo ocupe apenas o seu tamanho em uma segunda coluna
+
+//full = é para expandir o maximo de todas as colunas
+
+//*: fala com os itens filhos
