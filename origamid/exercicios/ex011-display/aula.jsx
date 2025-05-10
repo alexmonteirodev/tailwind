@@ -5,7 +5,7 @@
 
 //obs:
 // inline = o tamanho do item se reduz ao tamanho do elemento. (parece estar flutuando, não ocupa bloco da tela)
-// inline = o tamanho do item se reduz ao tamanho do elemento
+// inline-block = o tamanho do item se reduz ao tamanho do elemento
 // block = o tamanho do item se extende para a tela inteira, virando um bloco e ocupa um bloco da tela
 
 {
