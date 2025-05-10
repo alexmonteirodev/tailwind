@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../src/output.css" rel="stylesheet">
+</head>
+
+<body class="m-8 ">
+    <!-- display -->
+    <a href="/" class="bg-yellow-200 py-2 px-4 inline">Contato</a>
+    <a href="/" class="bg-blue-200 py-2 px-4 block">Sobre</a>
+    <p class="bg-red-200 py-2 px-4  inline-block">saiba mais</p>
+
+    <!-- hidden -->
+    <nav class="mt-10">
+        <button id="menuButton" class="bg-purple-300 px-4 py-2">Menu</button>
+        <ul id="menu" class="hidden">
+            <li>Produtos</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+
+    <!-- sr-only -->
+    <a href="#principal" class="sr-only focus:not-sr-only">Pular para o conteúdo</a>
+    <nav>
+        <ul class="mb-96 flex gap-4">
+            <li><a href="/">Produtos</a></li>
+            <li><a href="/">Sobre</a></li>
+            <li><a href="/">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="principal">
+        <h1>Notebooks e Smartphones</h1>
+    </main>
+
+
+</body>
+
+
+
+<script>
+    menuButton.addEventListener('click', () => menu.classList.toggle('hidden'))
+</script>
+
+</html>
