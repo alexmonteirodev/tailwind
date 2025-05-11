@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../src/output.css" rel="stylesheet">
+</head>
+
+<body class="m-8 ">
+    <button
+        class="bg-blue-400 hover:bg-blue-200 active:bg-blue-300 text-blue-950 border-2 border-blue-200 rounded-md py-2 px-4">
+        Comprar Produto
+    </button>
+    <br>
+    <input type="text" class="mt-10 bg-gray-200 border-2 border-gray-300">
+    <button
+        class="bg-blue-400 hover:bg-blue-200 active:bg-blue-300 text-blue-950 border-2 border-blue-200 rounded-md py-2 px-4 disabled:grayscale hover:disabled:bg-blue-400"
+        disabled>
+        Enviar
+    </button>
+    <br>
+
+    <ol class="list-decimal even:bg-gray-200 *:odd:bg-gray-400 *:first:text-green-300 *:last:text-red-400">
+        <li>Maria</li>
+        <li>Maria</li>
+        <li>Maria</li>
+        <li>Maria</li>
+        <li>Maria</li>
+    </ol>
+    <br>
+    <ol class="list-decimal">
+        <li class="odd:bg-gray-400 even:bg-gray-200 first:text-green-300 last:text-red-400">Maria</li>
+        <li class="odd:bg-gray-400 even:bg-gray-200">Maria</li>
+        <li class="odd:bg-gray-400 even:bg-gray-200">Maria</li>
+        <li class="odd:bg-gray-400 even:bg-gray-200">Maria</li>
+        <li class="odd:bg-gray-400 even:bg-gray-200  last:text-red-400">Maria</li>
+    </ol>
+
+    <!-- {foreach item}
+    <li class="odd:bg-gray-400 even:bg-gray-200 first:text-green-300 last:text-red-400">{item.nome}</li>
+    {end foreach} -->
+</body>
+
+</html>
