@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../src/output.css" rel="stylesheet">
+</head>
+
+<body class="m-8 flex gap-4">
+
+    <!-- animate-spin -->
+    <button class="bg-green-300 text-green-800 py-2 px-4 rounded-md relative">
+        Spin
+        <span
+            class="size-3 rounded-full border-green-700 border-3 border-r-transparent absolute -top-0.5 -right-0.5 animate-spin"></span>
+    </button>
+
+    <!-- animate-ping -->
+    <button class="bg-blue-300 text-blue-800 py-2 px-4 rounded-md relative">
+        Ping
+        <span class="size-3 rounded-full bg-blue-700 absolute -top-0.5 -right-0.5">
+            <span class="size-3 absolute inset-0 rounded-full bg-blue-700 animate-ping"></span>
+        </span>
+        <!-- inset-0 para ficar no mesmo lugar do outro span -->
+    </button>
+
+    <!-- animate-pulse -->
+    <button class="bg-purple-300 text-purple-800 py-2 px-4 rounded-md relative">
+        Pulse
+        <span class="size-3 rounded-full bg-purple-700  absolute -top-0.5 -right-0.5 animate-pulse"></span>
+    </button>
+
+    <!-- animate-bounce -->
+    <button class="bg-red-300 text-red-800 py-2 px-4 rounded-md relative">
+        Bounce
+        <span class="size-3 rounded-full bg-red-700  absolute -top-0.5 -right-0.5 animate-bounce"></span>
+    </button>
+
+
+
+</body>
+
+</html>
