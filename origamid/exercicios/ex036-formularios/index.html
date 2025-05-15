@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../src/output.css" rel="stylesheet">
+</head>
+
+<body class="m-8 ">
+
+    <!-- border/ring -->
+    <form class="grid grid-cols-1 max-w-sm p-4 rounded-md bg-gray-100 mx-auto">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email"
+            class="border-2 border-gray-200 bg-white rounded-md p-2 focus:outline-none focus:border-yellow-300 block focus:ring-2 focus:ring-yellow-200">
+    </form>
+
+    <!-- accent-color -->
+    <form action="" class="max-w-md mx-auto my-8 bg-gray-100 p-4 rounded-sm accent-purple-500">
+        <div>
+            <label class="flex items-center gap-2" for="termos">
+                <input id="termos" name="termos" type="checkbox" class="size-4" checked />Li e aceito os termos.</label>
+        </div>
+
+    </form>
+
+    <!-- appearance-none -->
+    <form action="" class="max-w-md mx-auto my-8 bg-gray-100 p-4 rounded-sm accent-purple-500">
+        <select
+            class="mb-4 border-2 rounded-md p-2 border-gray-300 focus:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-100 appearance-none pr-8 bg-[url('../exercicios/ex036-formularios/imgs/seta.svg')] bg-no-repeat bg-[center_right_0.5rem]"
+            name="" id="">
+            <option value="">Rio de Janeiro</option>
+            <option value="">São Paulo</option>
+            <option value="">Tocantins</option>
+        </select>
+    </form>
+
+
+    <!-- file -->
+
+    <form action="" class="max-w-md mx-auto my-8 bg-gray-100 p-4 rounded-sm accent-purple-500">
+        <input type="file"
+            class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-2 file:border-gray-400 file:border-solid file:text-sm file:font-semibold file:bg-gray-300 file:text-gray-700 hover:file:bg-gray-200 focus:outline-none file:focus:border-yellow-400" />
+    </form>
+</body>
+
+
+
+</html>
