@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="../../src/output.css" rel="stylesheet"> -->
+</head>
+
+<body class="m-8 ">
+
+    <div class="size-10 bg-origamid"></div>
+
+    <button class="bg-origamid px-2 py-3 mt-5 rounded-2xl text-purple-800">Clique para animar</button>
+
+</body>
+
+<script>
+    const btn = document.querySelector('button')
+    const div = document.querySelector('div')
+
+    btn.addEventListener('click', (e) => {
+        div.classList.add('animate-slideOut')
+    })
+
+</script>
+
+</html>
