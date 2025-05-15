@@ -31,7 +31,7 @@
     @apply bg-lime-200 border-2 border-lime-400 text-lime-900 py-2 px-4 rounded-full hover:bg-lime-400 hover:text-lime-950;
   }
   .div {
-    @apply size-20 rounded-2xl bg-blue-300 m-10;
+    @apply size-20 rounded-2xl bg-blue-300;
   }
 }
 
@@ -47,6 +47,6 @@
     padding: 0 1rem;
   }
 }
-@utility flex {
+/* @utility flex {
   @apply items-center justify-center;
-}
+} */
