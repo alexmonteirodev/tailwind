@@ -292,6 +292,9 @@
   }
 }
 @layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
   .invisible {
     visibility: hidden;
   }
@@ -741,6 +744,20 @@
   }
   .grow-0 {
     flex-grow: 0;
+  }
+  .table-auto {
+    table-layout: auto;
+  }
+  .table-fixed {
+    table-layout: fixed;
+  }
+  .border-separate {
+    border-collapse: separate;
+  }
+  .border-spacing-1 {
+    --tw-border-spacing-x: calc(var(--spacing) * 1);
+    --tw-border-spacing-y: calc(var(--spacing) * 1);
+    border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
   }
   .origin-center {
     transform-origin: center;
@@ -1854,9 +1871,54 @@
       border-radius: 0.25rem;
     }
   }
+  .\*\:\*\:border-2 {
+    :is(& > *) {
+      :is(& > *) {
+        border-style: var(--tw-border-style);
+        border-width: 2px;
+      }
+    }
+  }
+  .\*\:border-2 {
+    :is(& > *) {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
+    }
+  }
+  .\*\:\*\:border-gray-200 {
+    :is(& > *) {
+      :is(& > *) {
+        border-color: var(--color-gray-200);
+      }
+    }
+  }
+  .\*\:border-gray-200 {
+    :is(& > *) {
+      border-color: var(--color-gray-200);
+    }
+  }
+  .\*\:\*\:bg-red-400 {
+    :is(& > *) {
+      :is(& > *) {
+        background-color: var(--color-red-400);
+      }
+    }
+  }
   .\*\:bg-gray-300 {
     :is(& > *) {
       background-color: var(--color-gray-300);
+    }
+  }
+  .\*\:bg-red-400 {
+    :is(& > *) {
+      background-color: var(--color-red-400);
+    }
+  }
+  .\*\:\*\:p-2 {
+    :is(& > *) {
+      :is(& > *) {
+        padding: calc(var(--spacing) * 2);
+      }
     }
   }
   .\*\:p-2 {
@@ -1884,9 +1946,26 @@
       text-align: center;
     }
   }
+  .\*\:\*\:text-red-400 {
+    :is(& > *) {
+      :is(& > *) {
+        color: var(--color-red-400);
+      }
+    }
+  }
+  .\*\:text-red-400 {
+    :is(& > *) {
+      color: var(--color-red-400);
+    }
+  }
   .\*\:text-white {
     :is(& > *) {
       color: var(--color-white);
+    }
+  }
+  .\*\:uppercase {
+    :is(& > *) {
+      text-transform: uppercase;
     }
   }
   .group-hover\:text-5xl {
@@ -2518,6 +2597,16 @@
     background-color: var(--color-blue-300);
   }
 }
+@property --tw-border-spacing-x {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-spacing-y {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -2858,6 +2947,8 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
