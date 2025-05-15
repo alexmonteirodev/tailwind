@@ -31,3 +31,8 @@
     @apply bg-lime-200 border-2 border-lime-400 text-lime-900 py-2 px-4 rounded-full hover:bg-lime-400 hover:text-lime-950;
   }
 }
+
+@utility text-sombra {
+  text-shadow: 1px 1px #000;
+  font-size: 2rem;
+}

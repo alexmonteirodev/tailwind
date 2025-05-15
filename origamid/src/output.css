@@ -1412,6 +1412,10 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-sombra {
+    text-shadow: 1px 1px #000;
+    font-size: 2rem;
+  }
   .leading-normal {
     --tw-leading: var(--leading-normal);
     line-height: var(--leading-normal);
